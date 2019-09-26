@@ -66,5 +66,7 @@ func judge(root *TreeNode, val int, sign int) bool {
 				res = res && judge(root.Right, root.Val, 2)
 			}
 		}
+		return res
 	}
+	return true
 }
