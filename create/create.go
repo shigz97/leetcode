@@ -1,4 +1,4 @@
-package Tree
+package create
 
 type Treenode struct {
 	Val   int
