@@ -68,5 +68,4 @@ func judge(root *TreeNode, val int, sign int) bool {
 		}
 		return res
 	}
-	return true
 }
