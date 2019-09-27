@@ -1,4 +1,4 @@
-package create
+package tree
 
 type Treenode struct {
 	Val   int
@@ -12,7 +12,7 @@ type Treenode struct {
 	back  int
 }*/
 
-func createTree(nums []int) *Treenode {
+func CreateTree(nums []int) *Treenode {
 	if len(nums) == 0 || nums[0] == -1 {
 		return nil
 	}

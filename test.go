@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"leetcode/tree"
+)
 
 func main() {
-	root := createTree([]int{1})
-	fmt.Println(root)
+	root := tree.CreateTree([]int{1, 2, 3, 4, 5, 6})
+	fmt.Println(root.Left.Val)
 }
