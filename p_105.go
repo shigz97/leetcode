@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"leetcode/tree"
 	. "leetcode/tree"
 )
 
@@ -36,6 +35,6 @@ func main() {
 	pre := []int{3, 9, 20, 15, 7}
 	in := []int{9, 3, 15, 20, 7}
 	root := buildTree(pre, in)
-	tree.PreOrderTree(root)
+	PreOrderTree(root)
 	fmt.Println(root)
 }
