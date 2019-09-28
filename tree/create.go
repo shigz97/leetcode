@@ -1,29 +1,29 @@
 package tree
 
-type Treenode struct {
+type TreeNode struct {
 	Val   int
-	Left  *Treenode
-	Right *Treenode
+	Left  *TreeNode
+	Right *TreeNode
 }
 
 /*type queue struct {
-	node  []*Treenode
+	node  []*TreeNode
 	front int
 	back  int
 }*/
 
-func CreateTree(nums []int) *Treenode {
+func CreateTree(nums []int) *TreeNode {
 	if len(nums) == 0 || nums[0] == -1 {
 		return nil
 	}
-	//root := &Treenode{nums[0], nil, nil}
-	/*q := queue{make([]*Treenode, len(nums)), -1, -1}
+	//root := &TreeNode{nums[0], nil, nil}
+	/*q := queue{make([]*TreeNode, len(nums)), -1, -1}
 	q.back++
 	q.node[q.back] = root*/
-	nodes := make([]*Treenode, len(nums))
+	nodes := make([]*TreeNode, len(nums))
 	for i := range nums {
 		if nums[i] != -1 {
-			nodes[i] = &Treenode{nums[i], nil, nil}
+			nodes[i] = &TreeNode{nums[i], nil, nil}
 			if i != 0 {
 				if i%2 == 1 {
 					nodes[i/2].Left = nodes[i]

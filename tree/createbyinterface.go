@@ -1,15 +1,15 @@
 package tree
 
-func CreateTreeByInterface(nums []interface{}) *Treenode {
+func CreateTreeByInterface(nums []interface{}) *TreeNode {
 	if len(nums) == 0 || nums[0] == "null" {
 		return nil
 	}
-	nodes := make([]*Treenode, len(nums))
+	nodes := make([]*TreeNode, len(nums))
 	for i := range nums {
 		if nums[i] != "null" {
-			//nodes[i] = &Treenode{nums[i], nil, nil}
+			//nodes[i] = &TreeNode{nums[i], nil, nil}
 			n, _ := nums[i].(int)
-			nodes[i] = &Treenode{n, nil, nil}
+			nodes[i] = &TreeNode{n, nil, nil}
 			if i != 0 {
 				if i%2 == 1 {
 					nodes[i/2].Left = nodes[i]
