@@ -1,10 +1,10 @@
 package main
 
-import (
-	. "leetcode/tree"
-)
+import "fmt"
 
 func main() {
-	root := CreateTreeByInterface(1, "null", 2, "null", "null", "null", "null")
-	PrintTree(root)
+	i1 := []int{1, 2, 3}
+	fmt.Println(&i1[0])
+	i2 := append([]int{}, i1...)
+	fmt.Println(&i2[0])
 }
