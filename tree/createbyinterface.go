@@ -1,6 +1,6 @@
 package tree
 
-func CreateTreeByInterface(nums ...interface{}) *TreeNode {
+func CreateTreeByInterface(nums []interface{}) *TreeNode {
 	if len(nums) == 0 || nums[0] == "null" {
 		return nil
 	}
