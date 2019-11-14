@@ -1,10 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	. "tree"
+)
 
 func main() {
-	i1 := []int{1, 2, 3}
-	fmt.Println(&i1[0])
-	i2 := append([]int{}, i1...)
-	fmt.Println(&i2[0])
+	head := CreateTree([]int{1, 2, 3, 4, 5, 6})
+	fmt.Println(head)
+	PrintTree(head)
 }
