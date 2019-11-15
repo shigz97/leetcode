@@ -4,3 +4,5 @@ github.com/shigzz/gokit v0.0.0-20191114025910-eefbab7d857c h1:7uwVfTjK5NSgaID3tB
 github.com/shigzz/gokit v0.0.0-20191114025910-eefbab7d857c/go.mod h1:tA/MTcS7qGw86RzilHLPxTGfGoFyn5MnBGSd11QyoQs=
 github.com/shigzz/gokit v0.0.0-20191114064638-0715ab7c35ad h1:+yz0CSwMcVLOaP/8lgpCmWjuMVMXqerY/Hogxb5Db9o=
 github.com/shigzz/gokit v0.0.0-20191114064638-0715ab7c35ad/go.mod h1:kNnexwu1eBFbjMbJ2j3XkAjRKLkCGwfIHrna24p+bac=
+github.com/shigzz/gokit v0.0.0-20191114104513-c80f19c16e21 h1:A84ZLE2vZZkR/aLXvjLkDtO92/0td39+63+e41Op5B0=
+github.com/shigzz/gokit v0.0.0-20191114104513-c80f19c16e21/go.mod h1:kNnexwu1eBFbjMbJ2j3XkAjRKLkCGwfIHrna24p+bac=
