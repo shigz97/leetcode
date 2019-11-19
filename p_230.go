@@ -3,25 +3,30 @@ package main
 import (
 	"fmt"
 
-	"github.com/shigzz/gokit/stack"
 	. "github.com/shigzz/gokit/tree"
 )
 
 func kthSmallest(root *TreeNode, k int) int {
-	s, _ := stack.NewStack("*TreeNode")
-	n := 0
-	for !s.IsEmpty() || root != nil {
+	s, top, num := []*TreeNode{}, -1, 0
+	for top != -1 || root != nil {
 		if root != nil {
-			s.Push(root)
-		} else {
-			r, _ := s.Pop()
-			root = r.(*TreeNode)
-			n = n + 1
-			if n == k {
-
+			top = top + 1
+			if top >= len(s) {
+				s = append(s, root)
+			} else {
+				s[top] = root
 			}
+			root = root.Left
+		} else {
+			num = num + 1
+			if num == k {
+				return s[top].Val
+			}
+			root = s[top].Right
+			top = top - 1
 		}
 	}
+	return 0
 }
 
 func main() {
