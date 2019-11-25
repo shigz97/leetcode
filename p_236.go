@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	. "leetcode/tree"
+	. "github.com/shigzz/gokit/tree"
 )
 
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
